@@ -102,24 +102,23 @@ header {
 
 /* banner */
 .baner {
-  position: relative;
 }
 .baner__img {
   height: auto;
-  margin: 0 auto;
 }
+.baner__img img {
+  width: 100%;
+}
+
 .baner__text {
-  position: absolute;
-  top: 80%;
-  left: 27%;
-  transform: translate(-50%, -50%);
-  text-align: left;
-  color: #000;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 96px;
-  letter-spacing: 0%;
-  max-width: 500px;
+  color: black;
+  z-index: 2;
+}
+
+@media screen {
+  .baner__text {
+    font-size: 12px;
+  }
 }
 
 /* statistics */

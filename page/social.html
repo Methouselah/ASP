@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/favicon2.png" type="image/png" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" href="../img/favicon2.png" type="image/png" />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Social</title>
   </head>
   <body>
     <header>
       <div class="header_logo">
-        <a href="index.html"
-          ><img src="img/header_logo.png" alt="Логотип" class="logo"
+        <a href="../index.html"
+          ><img src="../img/header_logo.png" alt="Логотип" class="logo"
         /></a>
       </div>
       <div class="header__menu" onchange="window.open(this.value,'_blank')">
         <select class="header__select">
-          <option value="#" class="header__select__name">Reasons</option>
+          <option value="../index.html" class="header__select__name">
+            Reasons
+          </option>
           <option value="Social.html">Social media</option>
           <option value="catalog2.html">Fear of loneliness</option>
           <option value="catalog3.html">Perfectionism</option>
@@ -38,17 +42,21 @@
         <label for="darkModeToggle"></label>
       </div>
     </header>
-    <div class="main">
-      <div class="baner">
-        <img src="img/img2.png" alt="Image" />
-        <div class="baner__text">
-          <h1>Social media</h1>
-        </div>
+    <div class="baner">
+      <div class="baner__img">
+        <img src="../img/img2.png" alt="Image" />
       </div>
+      <div class="baner__text">
+        <h1>Social media</h1>
+      </div>
+    </div>
 
-      <div class="block-text">
-        <h2>The harmful effects of social media include:</h2>
-        <p>
+    <div class="main">
+      <div class="block">
+        <h2 class="block__header">
+          The harmful effects of social media include:
+        </h2>
+        <p class="block__item">
           Social media has a significant impact on people's emotional states,
           often influencing their feelings and moods in various ways. One of the
           positive aspects is the ability to stay connected with friends and
@@ -56,7 +64,7 @@
           Facebook, Instagram, and Twitter, individuals can share updates,
           photos, and messages, fostering a sense of belonging and support.
         </p>
-        <p>
+        <p class="block__item">
           However,social media can also contribute to negative emotions such as
           loneliness and envy. People may experience feelings of isolation when
           they see others seemingly enjoying fulfilling social lives online
@@ -66,14 +74,14 @@
           versions of others' lives may create unrealistic expectations and
           pressure to measure up.
         </p>
-        <p>
+        <p class="block__item">
           Additionally, the constant exposure to news and information on social
           media can evoke anxiety or sadness, particularly when confronted with
           distressing or negative headlines. The rapid spread of sensationalized
           content and misinformation can exacerbate these feelings, leading to
           emotional distress and uncertainty.
         </p>
-        <p>
+        <p class="block__item">
           In conclusion, while social media has the potential to enhance
           connectivity and communication, it also has a significant impact on
           people's emotional well-being. It is essential for individuals to be
@@ -88,9 +96,9 @@
           I have identified 7 reasons for such a terrible situation:
         </h2>
         <div class="sections__list">
-          <a href="Social.html" class="section">Social media</a>
           <a href="#" class="section">Social media</a>
-          <a href="dark.html" class="section">Dark</a>
+          <a href="#" class="section">Social media</a>
+          <a href="#" class="section">Dark</a>
           <a href="#" class="section">Social media</a>
           <a href="#" class="section">Social media</a>
           <a href="#" class="section">Social media</a>
@@ -98,6 +106,6 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
