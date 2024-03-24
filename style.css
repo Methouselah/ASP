@@ -16,6 +16,25 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+  width: 10px; /* Ширина скроллбара */
+}
+
+/* Оформление ползунка скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #666; /* Цвет ползунка */
+  border-radius: 5px; /* Закругление углов */
+}
+
+/* Оформление трека скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #999; /* Цвет трека */
+}
 /* Header */
 
 header {
@@ -24,25 +43,12 @@ header {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .header_logo {
   max-width: 50px;
   height: auto;
   cursor: pointer;
-}
-
-.header__menu {
-  display: flex;
-}
-.header__select {
-  background-color: #333;
-  color: #fff;
-  border-radius: 15px;
-  padding: 5px;
-}
-
-.header__select option {
-  margin-bottom: 10px;
 }
 
 /* dark mode */
@@ -96,29 +102,27 @@ header {
 
 /* main */
 .main {
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 /* banner */
 .baner {
+  display: flex;
+  align-items: center;
 }
 .baner__img {
   height: auto;
+  width: 70%;
+  margin-right: 30px;
 }
 .baner__img img {
   width: 100%;
 }
 
 .baner__text {
-  color: black;
   z-index: 2;
-}
-
-@media screen {
-  .baner__text {
-    font-size: 12px;
-  }
+  font-size: 20px;
 }
 
 /* statistics */
@@ -146,16 +150,17 @@ header {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .section {
-  color: black;
+  color: white;
   text-decoration: none;
   transition: text-decoration 0.5s ease;
-}
-
-.section:hover {
-  text-decoration: underline;
+  margin: 0 10px 15px 10px;
+  background-color: #666;
+  padding: 8px;
+  border-radius: 20px;
 }
 
 /* block text */
@@ -167,4 +172,41 @@ header {
 }
 .block-text h2 {
   font-size: 26px;
+}
+
+/* Стили для мобильных устройств */
+@media screen and (max-width: 767px) {
+  .main {
+    max-width: 400px;
+    padding: 0 10px;
+  }
+
+  .header__select {
+    width: 150px;
+  }
+  .baner__text {
+    font-size: 12px;
+  }
+}
+
+/* Стили для планшетов */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    max-width: 600px;
+  }
+  .header__select {
+    width: 200px;
+  }
+  .baner__text {
+    font-size: 15px;
+  }
+}
+/* Стили для ноутбуков */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  /* Ваш CSS код для ноутбуков */
+}
+
+/* Стили для десктопов */
+@media screen and (min-width: 1440px) {
+  /* Ваш CSS код для десктопов */
 }

@@ -28,8 +28,8 @@ const sr = ScrollReveal({
 });
 
 sr.reveal("header", { delay: 100 });
-sr.reveal(".baner__img", { delay: 100 });
-sr.reveal(".baner__text", { delay: 500, interval: 100, origin: "bottom" });
+sr.reveal(".baner__img", { delay: 300 });
+sr.reveal(".baner__text", { delay: 300 });
 sr.reveal(".block", { delay: 100 });
 sr.reveal(".block__list", { delay: 200 });
 sr.reveal(".section", { delay: 200, interval: 100 });
