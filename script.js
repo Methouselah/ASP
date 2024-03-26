@@ -34,3 +34,9 @@ sr.reveal(".block", { delay: 100 });
 sr.reveal(".block__list", { delay: 200 });
 sr.reveal(".section", { delay: 200, interval: 100 });
 sr.reveal(".block__item", { delay: 100 });
+sr.reveal(".text-title", { delay: 300, interval: 100 });
+sr.reveal(".text-item", { delay: 300, interval: 200 });
+sr.reveal(".text-item-i", { delay: 300 });
+sr.reveal(".footer-content", { delay: 300 });
+
+// ----------------------------------------- Test ------------------------------
