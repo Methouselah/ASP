@@ -40,3 +40,4 @@ sr.reveal(".text-item-i", { delay: 300 });
 sr.reveal(".footer-content", { delay: 300 });
 
 // ----------------------------------------- Test ------------------------------
+console.log(NaN === NaN);
