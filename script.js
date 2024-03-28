@@ -40,17 +40,3 @@ sr.reveal(".text-item-i", { delay: 300 });
 sr.reveal(".footer-content", { delay: 300 });
 
 // ----------------------------------------- Test ------------------------------
-const element = document.getElementById("exampleElement");
-
-// Делаем что-то с элементом
-if (element) {
-  // Пример: изменяем его текст
-  element.innerText = "Элемент изменен!";
-
-  // Пример: добавляем стили
-  element.style.backgroundColor = "lightblue";
-  element.style.padding = "10px";
-  element.style.border = "1px solid black";
-} else {
-  console.log("Элемент не найден");
-}
