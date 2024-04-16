@@ -3,200 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="img/favicon2.png" type="image/png" />
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/icon_rocket.svg" type="image/png" />
     <title>Home</title>
   </head>
   <body>
-    <header>
-      <div class="header_logo">
-        <a href="index.html"
-          ><img src="img/header_logo.png" alt="Логотип" class="logo"
-        /></a>
-      </div>
-      <div class="toggle-container">
-        <input type="checkbox" id="darkModeToggle" />
-        <label for="darkModeToggle"></label>
-      </div>
-    </header>
-    <div class="main">
-      <div class="baner">
-        <div class="baner__img">
-          <img src="img/img1.png" alt="Image" />
+    <div class="bg">
+      <div class="wrapper">
+        <header>
+          <div class="header__logo">
+            <a href="#" class="header__logo__link">
+              <img src="img/Logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item">Возможности</a>
+            <a href="#" class="header__nav-item">Тарифы</a>
+            <a href="#" class="header__nav-item">Акции</a>
+          </nav>
+          <a href="#" class="button">Войти</a>
+        </header>
+        <div class="banner">
+          <div class="banner__content">
+            <h2 class="banner__title">
+              Сервис автоматического постинга в соц сетях
+            </h2>
+            <h3 class="banner__subtitle">
+              Разместим по расписанию ваши записи в соц сетях
+            </h3>
+            <a href="#" class="button button-green">Начать Работу</a>
+            <div class="banner__social">
+              <a href="#" class="banner__social-link">
+                <img src="img/facebook.svg" alt="social-link" />
+              </a>
+              <a href="#" class="banner__social-link">
+                <img src="img/wk.svg" alt="social-link" />
+              </a>
+              <a href="#" class="banner__social-link">
+                <img src="img/Instagram.svg" alt="social-link" />
+              </a>
+              <a href="#" class="banner__social-link">
+                <img src="img/twitter.svg" alt="social-link" />
+              </a>
+              <a href="#" class="banner__social-link">
+                <img src="img/telegram.svg" alt="social-link" />
+              </a>
+            </div>
+          </div>
+          <div class="banner__img">
+            <img src="img/banner-picture.png" alt="banner-picture" />
+          </div>
         </div>
-        <div class="baner__text">
-          <h1>Why are adults unhappy?</h1>
-        </div>
-      </div>
-      <div class="block">
-        <h3 class="block__header">
-          I wont to find answer for this question. some statistics:
-        </h3>
-        <ol class="block__list">
-          <li>
-            A study commissioned by Britain's National Health Service (NHS)
-            showed how much children's mental health has worsened since 2017. At
-            that time, mental disorders were observed in one out of nine
-            children. By July 2020, after the first quarantine, such disorders
-            were identified in one child out of six. Among boys, the percentage
-            of children with the disorder increased from 11% in 2017 to 16% in
-            2020, and among girls from 10% to 15%.
-          </li>
-          <li>
-            Divorce Statistics: Research shows that divorce can be one of the
-            causes of unhappiness in adults. For example, according to
-            statistics from the National Institutes of Health, about 40-50% of
-            families in the United States get divorced, and divorce is often
-            accompanied by stress and sometimes a long period of depression in
-            the parents.
-          </li>
-          <li>
-            Job Satisfaction Statistics: Job satisfaction studies show that a
-            significant proportion of adults do not feel satisfied with their
-            jobs. For example, Gallup's 2017 Global Job Satisfaction Survey
-            found that only 15% of workers worldwide feel completely satisfied
-            with their jobs.
-          </li>
-          <li>
-            Stress Statistics: High stress levels can be one of the causes of
-            unhappiness in adults. For example, the American Psychological
-            Association's 2019 Study on Stress in America found that money,
-            work, and health are the top sources of stress for adults.
-          </li>
-          <li>
-            Loneliness Statistics: Loneliness can also be a factor in
-            unhappiness. A 2018 Cigna Health study on loneliness and happiness
-            in the United States found that more than half of Americans feel
-            lonely, and 20% said they rarely or never feel like they have
-            someone who listens to them.
-          </li>
-          <li>
-            Financial Insecurity Statistics: Lack of financial stability can
-            also lead to unhappiness in adults. For example, a study examined
-            the link between financial instability and mental health in adults
-            and found that people with low incomes were more likely to
-            experience depression and anxiety.
-          </li>
-        </ol>
-      </div>
-      <div class="text">
-        <p class="text-item">
-          Philosophically, people are unhappy because institutions have fallen.
-          The institutions of marriage, the institution of the state, the
-          institution of religion. In ancient times, people lived for 30 years
-          and all they thought about was: how to feed their family, how to
-          shelter from bad weather and how not to die from terrible diseases.
-          Now we have covered all the basic needs and a new question arises:
-          “What to do next?” What should a modern person do to understand what
-          happiness is?
-        </p>
-
-        <h2 class="text-title">What is happiness?</h2>
-        <p class="text-item">Albert Camus once said:</p>
-        <p class="text-item-i">
-          “People think that happiness is a reward for an honest life, and
-          misfortune is a manifestation of the law. But both of these feelings
-          are just shadows that illuminate our existence.”
-        </p>
-        <p class="text-item">
-          In this quote, Camus states that happiness and unhappiness are
-          countable parts of human experience.
-        </p>
-        <p class="text-item">
-          Different directions of philosophy and religion solve this issue in
-          different ways. Each person answers this question differently. My
-          opinion is that this is a state, a state in which you face
-          difficulties, with joy, but still remain yourself. There can be no
-          endless joy, just like there can be no endless pleasure. In such a
-          state, a person will very soon get bored. After all, in order to
-          understand what good is, you need evil.
-        </p>
-        <h2 class="text-title">Childhood</h2>
-        <p class="text-item">
-          Fred Rogers, who is known for his contributions to the field of child
-          development and psychology:
-        </p>
-        <p class="text-item-i">
-          "Children often know what they need to be happy. They just want to be
-          accepted and loved for who they are."
-        </p>
-        <p class="text-item">
-          This quote highlights the importance of accepting children for who
-          they are and giving them love and support.
-        </p>
-        <p class="text-item">
-          It seems to me that children do not have happiness; rather, they do
-          not understand what it is. Children differ from adults in that they
-          are not afraid to show their feelings. They have no embarrassment,
-          fear of being misunderstood, or prejudices. They're just whatever I
-          feel. They show it.
-        </p>
-        <h2 class="text-title">What reasons make us unhappy?</h2>
-        <p class="text-item">
-          It is impossible to describe all the reasons; everyone has their own
-          and affects it to a greater or lesser extent. You can highlight the
-          most important and popular ones.
-        </p>
-        <h2 class="text-title">Social media</h2>
-        <p class="text-item-i">
-          "Social media doesn't make us lonely. It makes us lonely together."
-        </p>
-        <p class="text-item">
-          This quote draws attention to how social media can create the illusion
-          of social connectedness but actually deepen feelings of loneliness and
-          alienation. Virtual communication may not always replace real, deeper
-          interactions, which can negatively impact our sense of happiness and
-          well-being.
-        </p>
-        <p class="text-item">
-          I think this is the main problem. They gave us the opportunity to talk
-          to people on the other side of the world and keep in touch. But they
-          also made it possible not to talk to those who were nearby. Any
-          electronic dialogue has no magic. It is impossible to convey your
-          sincere feelings without intonation.
-        </p>
-        <h2 class="text-title">2. Historical events and doomscrolling</h2>
-        <p class="text-item">
-          Now is the most unstable time since the Second World War. There are
-          currently 46 military conflicts going on simultaneously. Quarantine,
-          economic crisis, fear of the future and scientific progress, the
-          development of AI and the existential questions it raises. During such
-          a period, people constantly refresh their news feed and mindlessly
-          consume news, which leads to stress, anxiety and depression.
-        </p>
-        <h2 class="text-title">3. Difficulty expressing emotions</h2>
-        <p class="text-item">Kathy Griffin once said:</p>
-        <p class="text-item-i">
-          "The difficulty is that expressing your emotions clearly is like
-          trying to explain color to a blind person."
-        </p>
-
-        <p class="text-item">
-          In modern society, it is difficult to show your emotions because of
-          the judgment of others, in some situations even of loved ones. Since
-          childhood, we have been told: “Don’t cry! Do not scream! Be calm!” an
-          emotional guy is perceived as weak. As a result, all people keep it
-          inside themselves and it turns into hatred, anger, depression.
-        </p>
       </div>
     </div>
-    <footer>
-      <div class="footer-content">
-        <p>Created by Dima Stengach</p>
-        <p>
-          "Happiness is not something ready-made. It comes from your own
-          actions." - Dalai Lama
-        </p>
+    <div class="features">
+      <div class="wrapper">
+        <h2 class="features__title">Возможности системы</h2>
+        <div class="features__items">
+          <div class="features__item">
+            <div class="features__item-shadow"></div>
+            <div class="features__item-img">
+              <img src="img/clock.svg" alt="clock" />
+            </div>
+            <div class="features__item-title">Отложенная публикация</div>
+            <div class="features__item-text">
+              Создайте запись, и сервис опубликует ее во все социальные сети -
+              сразу же или в указанное Вами время.
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-img">
+              <div class="features__item-shadow"></div>
+              <img src="img/web.svg" alt="web" />
+            </div>
+            <div class="features__item-title">Импорт записей с сайта</div>
+            <div class="features__item-text">
+              Делитесь записями с Вашего сайта - по мере их появления на сайте
+              или по расписанию.
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-img">
+              <div class="features__item-shadow"></div>
+              <img src="img/video.svg" alt="clock" />
+            </div>
+            <div class="features__item-title">Импорт видео</div>
+            <div class="features__item-text">
+              Создайте запись, и сервис опубликует ее во все социальные сети -
+              сразу же или в указанное Вами время.
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="script.js"></script>
+    </div>
+
+    <div class="info">
+      <div class="wrapper">
+        <div class="info__container">
+          <div class="info__img">
+            <img src="img/info-img.png" alt="info-img" />
+          </div>
+          <div class="info__content">
+            <div class="info__title">Получи больше подписчиков</div>
+            <div class="info__text">
+              Используйте богатые возможности сервиса, чтобы сервис подстроился
+              под ваши задачи и цели, а вы получите гораздо больше подписчиков
+              во всех соц сетях
+            </div>
+            <div class="button button-green">Начать работу</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
