@@ -9,6 +9,11 @@ body {
   padding: 0;
   transition: background-color 0.5s ease;
   background: #808080;
+  box-sizing: border-box;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 img {
@@ -132,6 +137,7 @@ header {
 .banner__social-link {
   width: 50px;
   height: 50px;
+  margin-right: 10px;
 }
 
 .banner__social-link img {
@@ -185,6 +191,7 @@ header {
   justify-content: center; /* Выравниваем по горизонтали по центру */
   align-items: center;
   z-index: 1;
+  padding: 5px;
 }
 
 .features__item-title {
@@ -210,12 +217,15 @@ header {
 .info__container {
   display: flex;
   align-items: center;
+  padding: 70px 0 100px 0;
+  justify-content: space-around;
 }
 .info__img {
   width: 482px;
   height: 335px;
 }
 .info__content {
+  width: 521px;
 }
 .info__title {
   color: rgba(0, 0, 0, 0.87);
@@ -223,6 +233,7 @@ header {
   font-weight: 700;
   line-height: 49px;
   letter-spacing: 0%;
+  margin: 0 0 30px 40px;
 }
 .info__text {
   color: rgba(0, 0, 0, 0.87);
@@ -230,8 +241,154 @@ header {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.44px;
+  margin-bottom: 30px;
 }
-.button {
+
+/* tarif */
+
+.tarif {
+  background: #fff;
+  padding-top: 70px;
 }
-.button-green {
+.tarif__title {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.tarif__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.tarif__card {
+  border: 1px solid rgb(41, 142, 218);
+  border-radius: 16px;
+  width: 350px;
+  height: 580px;
+  padding: 22px;
+}
+.tarif__card-title {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.tarif__card-price {
+  margin-top: 40px;
+  color: rgb(41, 142, 218);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.tarif__card__info {
+  margin-top: 50px;
+}
+
+.tarif__card__info-text {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tarif__card__info-text:last-child {
+  margin-bottom: 0;
+}
+
+.tarif__card__info-text span {
+  display: block;
+  color: rgb(41, 142, 218);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.tarif__card-button {
+  height: 65.88px;
+  margin-top: 121px;
+  width: 306px;
+}
+
+/* tarif__card-black */
+
+.tarif__card-black {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 16px;
+  background: rgb(72, 72, 72);
+}
+.tarif__card-black .tarif__card-title,
+.tarif__card-black .tarif__card__info-text {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.tarif__card-black .tarif__card__info-text span,
+.tarif__card-price {
+  color: rgb(76, 218, 41);
+}
+
+.tarif__card-black .tarif__card-button {
+  background: #fff;
+  color: #000;
+}
+
+/* form */
+
+.form {
+  padding: 170px;
+}
+.form__container {
+  width: 547px;
+  margin: 0 auto;
+}
+.form__title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form__text {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.44px;
+  text-align: center;
+}
+.form__input {
+  width: 451px;
+  display: flex;
+  position: relative;
+  margin: 70px auto 70px auto;
+}
+.form__input input {
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  border: none;
+  padding: 13px 21px;
+  width: 100%;
+}
+
+.form__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgb(41, 142, 218);
+  border: none;
 }
