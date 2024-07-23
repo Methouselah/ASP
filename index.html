@@ -4,201 +4,137 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/icon_rocket.svg" type="image/png" />
-    <title>Home</title>
+    <link
+      type="image/x-icon"
+      href="img/icons/favicon.svg"
+      rel="shortcut icon"
+    />
+    <title>Главная</title>
   </head>
   <body>
-    <div class="bg">
-      <div class="wrapper">
-        <header>
-          <div class="header__logo">
-            <a href="#" class="header__logo__link">
-              <img src="img/Logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <nav class="header__nav">
-            <a href="#" class="header__nav-item">Возможности</a>
-            <a href="#" class="header__nav-item">Тарифы</a>
-            <a href="#" class="header__nav-item">Акции</a>
-          </nav>
-          <a href="#" class="button">Войти</a>
-        </header>
-        <div class="banner">
+    <header>
+      <div class="header__container container">
+        <div class="header__logo">hite</div>
+        <ul class="header__menu">
+          <li><a href="#" class="header__menu__link">главная</a></li>
+          <li><a href="#" class="header__menu__link">магазин</a></li>
+          <li><a href="#" class="header__menu__link">о нас</a></li>
+        </ul>
+        <ul class="header__nav">
+          <li>
+            <a href="#" class="header__nav__icon"
+              ><img src="img/icons/search.svg" alt="поиск"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__icon"
+              ><img src="img/icons/basket.svg" alt="Корзина"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="header__nav__icon"
+              ><img src="img/icons/favorites.svg" alt="Избранное"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <article class="banner">
+        <div class="banner__container container">
           <div class="banner__content">
-            <h2 class="banner__title">
-              Сервис автоматического постинга в соц сетях
-            </h2>
-            <h3 class="banner__subtitle">
-              Разместим по расписанию ваши записи в соц сетях
-            </h3>
-            <a href="#" class="button button-green">Начать Работу</a>
-            <div class="banner__social">
-              <a href="#" class="banner__social-link">
-                <img src="img/facebook.svg" alt="social-link" />
-              </a>
-              <a href="#" class="banner__social-link">
-                <img src="img/wk.svg" alt="social-link" />
-              </a>
-              <a href="#" class="banner__social-link">
-                <img src="img/Instagram.svg" alt="social-link" />
-              </a>
-              <a href="#" class="banner__social-link">
-                <img src="img/twitter.svg" alt="social-link" />
-              </a>
-              <a href="#" class="banner__social-link">
-                <img src="img/telegram.svg" alt="social-link" />
-              </a>
-            </div>
+            <h2 class="banner__title">Журнальный стол</h2>
+            <p class="banner__description">Описание товара</p>
+            <button type="button" class="banner__btn btn">Купить</button>
           </div>
           <div class="banner__img">
-            <img src="img/banner-picture.png" alt="banner-picture" />
+            <img src="img/banner.png" alt="товар" />
           </div>
         </div>
-      </div>
-    </div>
-    <div class="features">
-      <div class="wrapper">
-        <h2 class="features__title">Возможности системы</h2>
-        <div class="features__items">
-          <div class="features__item">
-            <div class="features__item-shadow"></div>
-            <div class="features__item-img">
-              <img src="img/clock.svg" alt="clock" />
-            </div>
-            <div class="features__item-title">Отложенная публикация</div>
-            <div class="features__item-text">
-              Создайте запись, и сервис опубликует ее во все социальные сети -
-              сразу же или в указанное Вами время.
-            </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-img">
-              <div class="features__item-shadow"></div>
-              <img src="img/web.svg" alt="web" />
-            </div>
-            <div class="features__item-title">Импорт записей с сайта</div>
-            <div class="features__item-text">
-              Делитесь записями с Вашего сайта - по мере их появления на сайте
-              или по расписанию.
-            </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-img">
-              <div class="features__item-shadow"></div>
-              <img src="img/video.svg" alt="clock" />
-            </div>
-            <div class="features__item-title">Импорт видео</div>
-            <div class="features__item-text">
-              Создайте запись, и сервис опубликует ее во все социальные сети -
-              сразу же или в указанное Вами время.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="info">
-      <div class="wrapper">
-        <div class="info__container">
-          <div class="info__img">
-            <img src="img/info-img.png" alt="info-img" />
-          </div>
-          <div class="info__content">
-            <div class="info__title">Получи больше подписчиков</div>
-            <div class="info__text">
-              Используйте богатые возможности сервиса, чтобы сервис подстроился
-              под ваши задачи и цели, а вы получите гораздо больше подписчиков
-              во всех соц сетях
-            </div>
-            <a href="#" class="button button-green">Начать работу</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="tarif">
-      <div class="wrapper">
-        <div class="tarif__title">Тарифные планы</div>
-        <div class="tarif__cards">
-          <div class="tarif__card">
-            <div class="tarif__card-title">Старт</div>
-            <div class="tarif__card-price">Бесплатно</div>
-            <div class="tarif__card__info">
-              <div class="tarif__card__info-text"><span>1</span>соц сеть</div>
-              <div class="tarif__card__info-text">
-                <span>50</span>постов в месяц
+      </article>
+      <article class="popular">
+        <div class="popular__container container">
+          <h2 class="popular__title">Популярные товары</h2>
+          <div class="popular__products">
+            <div class="product">
+              <div class="product__img">
+                <img src="img/lamp.png" alt="лампа белая" />
+                <div class="product__action">
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/basket.svg" alt="Корзина" />
+                  </a>
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/favorites.svg" alt="Избранное" />
+                  </a>
+                </div>
+              </div>
+              <div class="product__description">
+                <h3 class="product__title">Белая лампа</h3>
+                <p class="product__prise">$512</p>
               </div>
             </div>
-            <a href="#" class="tarif__card-button button button-green">
-              Начать работу
-            </a>
-          </div>
-          <div class="tarif__card tarif__card-black">
-            <div class="tarif__card-title">Стандарт</div>
-            <div class="tarif__card-price">$24</div>
-            <div class="tarif__card__info">
-              <div class="tarif__card__info-text"><span>5</span>соц сеть</div>
-              <div class="tarif__card__info-text">
-                <span>1500</span>постов в месяц
+            <div class="product">
+              <div class="product__img">
+                <img src="img/chair.png" alt="кресло" />
+                <div class="product__action">
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/basket.svg" alt="Корзина" />
+                  </a>
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/favorites.svg" alt="Избранное" />
+                  </a>
+                </div>
+              </div>
+              <div class="product__description">
+                <h3 class="product__title">Деревянный стул</h3>
+                <p class="product__prise">$498</p>
               </div>
             </div>
-            <a href="#" class="tarif__card-button button button-green">
-              Начать работу
-            </a>
-          </div>
-          <div class="tarif__card">
-            <div class="tarif__card-title">Профи</div>
-            <div class="tarif__card-price">$56</div>
-            <div class="tarif__card__info">
-              <div class="tarif__card__info-text"><span>10</span>соц сеть</div>
-              <div class="tarif__card__info-text">
-                <span>∞</span>постов в месяц
+            <div class="product">
+              <div class="product__img">
+                <img src="img/lampdark.png" alt="лампа чёрная" />
+                <div class="product__action">
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/basket.svg" alt="Корзина" />
+                  </a>
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/favorites.svg" alt="Избранное" />
+                  </a>
+                </div>
+              </div>
+              <div class="product__description">
+                <h3 class="product__title">Серая лампа</h3>
+                <p class="product__prise">$784</p>
               </div>
             </div>
-            <a href="#" class="tarif__card-button button button-green">
-              Начать работу
-            </a>
+            <div class="product">
+              <div class="product__img">
+                <img src="img/lamp.png" alt="лампа белая" />
+                <div class="product__action">
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/basket.svg" alt="Корзина" />
+                  </a>
+                  <a href="#" class="product__action__link">
+                    <img src="img/icons/favorites.svg" alt="Избранное" />
+                  </a>
+                </div>
+              </div>
+              <div class="product__description">
+                <h3 class="product__title">Белая лампа</h3>
+                <p class="product__prise">$512</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="bg">
-      <div class="form">
-        <div class="form__container">
-          <div class="form__title">
-            Получить месяц бесплатного сервиса с тарифом Профи
-          </div>
-          <div class="form__text">
-            Введите вашу почту и получите месяц бесплатного использования тарифа
-            “Профи”
-          </div>
-          <div class="form__input">
-            <input type="text" placeholder="Ваш email" />
-            <a href="#" class="form__button button">Начать работу</a>
-          </div>
-        </div>
-      </div>
-      <div class="wrapper">
-        <header>
-          <div class="header__logo">
-            <a href="#" class="header__logo__link">
-              <img src="img/Logo.svg" alt="Logo" />
-            </a>
-          </div>
-          <nav class="header__nav">
-            <a href="#" class="header__nav-item">Возможности</a>
-            <a href="#" class="header__nav-item">Тарифы</a>
-            <a href="#" class="header__nav-item">Акции</a>
-          </nav>
-          <a href="#" class="button">Войти</a>
-        </header>
-      </div>
-    </div>
+      </article>
+    </main>
     <script src="scripts/script.js"></script>
   </body>
 </html>
