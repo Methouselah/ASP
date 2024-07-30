@@ -215,42 +215,6 @@ header {
   background-color: var(--main);
 }
 
-/* -------------- Category -------------- */
-.catalog__container {
-  display: flex;
-  height: 680px;
-}
-.catalog1 {
-  width: 100%;
-}
-.catalog__item__title {
-  font-size: 2.25rem;
-  font-weight: 400;
-  line-height: 42px;
-  letter-spacing: 0%;
-  position: absolute;
-  top: 20px;
-  z-index: 2;
-}
-
-.catalog1 .catalog__item__title {
-  right: 20px;
-}
-
-.catalog2 .catalog__item__title {
-  left: 20px;
-}
-.catalog__item {
-  position: relative;
-}
-
-.catalog__link img {
-  max-height: 100%;
-}
-.catalog2 {
-  width: 100%;
-}
-
 /* -------------- Popular -------------- */
 .popular__title {
   margin-top: 100px;
